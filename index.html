@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PeraPhone Technology</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🍐 PeraPhone
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#carrinho">Carrinho</a>
+    </nav>
+
+    <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="contador">0</span>
+    </div>
+
+</header>
+
+<section id="inicio" class="hero">
+
+    <div class="hero-box">
+
+        <h1>PeraPhone Technology</h1>
+
+        <h2>Tecnologia que conecta o seu futuro</h2>
+
+        <p>
+            Smartphones premium com design moderno, câmeras poderosas
+            e desempenho extremo. Tudo em um só lugar.
+        </p>
+
+        <button class="hero-btn">
+            Explorar Produtos
+        </button>
+
+    </div>
+
+</section>
+
+<section id="produtos" class="produtos">
+
+    <h2>Destaques</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="imagens/peraphone.jpg">
+
+            <h3>PeraPhone Ultra X</h3>
+
+            <p>512GB • 16GB RAM • 200MP</p>
+
+            <div class="price">R$ 6.499,90</div>
+
+            <button onclick="addItem('Ultra X', 6499.90)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/peraphonepro.jpg">
+
+            <h3>PeraPhone Air</h3>
+
+            <p>256GB • 8GB RAM • AMOLED</p>
+
+            <div class="price">R$ 3.299,90</div>
+
+            <button onclick="addItem('Air', 3299.90)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="imagens/peraphonepromax.jpg">
+
+            <h3>PeraPhone Pro</h3>
+
+            <p>128GB • 8GB RAM • 120Hz</p>
+
+            <div class="price">R$ 2.799,90</div>
+
+            <button onclick="addItem('Pro', 2799.90)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="carrinho" class="cart-section">
+
+    <h2>Seu Carrinho</h2>
+
+    <!-- itens do carrinho aparecem aqui -->
+    <div id="cart-items"></div>
+
+    <!-- total -->
+    <div class="total">
+        Total: R$ <span id="total">0.00</span>
+    </div>
+
+    <!-- BOTÃO QUE VOCÊ ADICIONOU -->
+    <button class="checkout-btn" onclick="window.location.href='checkout.html'">
+        Finalizar Compra
+    </button>
+
+</section>
+
+<footer>
+
+    <h3>PeraPhone Technology</h3>
+
+    <p>Potência, inovação e estilo em um só lugar.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

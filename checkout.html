@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - PeraPhone</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="checkout-page">
+
+<div class="checkout-container">
+
+    <h1>Finalizar Compra</h1>
+
+    <p>Preencha seus dados para concluir seu pedido</p>
+
+    <form>
+
+        <input type="text" placeholder="Nome completo" required>
+
+        <input type="text" placeholder="Endereço de entrega" required>
+
+        <input type="text" placeholder="Cidade" required>
+
+        <select required>
+            <option value="">Forma de pagamento</option>
+            <option>PIX</option>
+            <option>Cartão de Crédito</option>
+            <option>Boleto</option>
+        </select>
+
+        <button type="button" onclick="finalizarCompra()">
+            Pagar Agora
+        </button>
+
+    </form>
+
+</div>
+
+<script>
+function finalizarCompra(){
+    alert("Compra realizada com sucesso na PeraPhone 🚀");
+
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
